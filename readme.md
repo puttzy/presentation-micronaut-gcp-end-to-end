@@ -46,9 +46,9 @@ the cloud run and cloud build locally
 ###Creating the simple micronaut
 Creating the simple base application from the command line is as simple as:
 
-> mn create-app com.putt.example.micronaut.gdg --features file-watch
+> mn create-app com.putt.example.micronaut.gdg --features file-watch -i
 
-This will create a project with a single controller and matching test class.
+This will create a project with a single controller and matching test class inside of the current directory  (> -i flag)
 
 demo using the continuous
 file-watch for automatic updates when running locally.  _See [File Watch and Server Restart](https://docs.micronaut.io/latest/guide/index.html#types) section of the
