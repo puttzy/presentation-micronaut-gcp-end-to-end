@@ -20,7 +20,6 @@ application that can be built and deployed automatically to a Google Cloud Run e
 * create a google build agent
 * deploy to google cloud run
 * uninstall micronaut
-* uninstall micronaut
 
 
 
@@ -39,7 +38,7 @@ for [more information about installing](https://sdkman.io/install) and sdk
 > sdk install micronaut
 
 ### <a name="install-gcloud">Install GCloud SDK</a>
-There's a few more steps than I want to get into for this tutorial - but to understand how to install and confirgure the gcloud
+There's a few more steps than I want to get into for this tutorial - but to understand how to install and configure the gcloud
 sdk check [here](https://cloud.google.com/sdk/gcloud/).  Please note you'll need to also install the beta feature to test
 the cloud run and cloud build locally
 
@@ -48,10 +47,10 @@ Creating the simple base application from the command line is as simple as:
 
 > mn create-app com.putt.example.micronaut.gdg --features file-watch -i
 
-This will create a project with a single controller and matching test class inside of the current directory  (> -i flag)
+This will create a project with a single controller and matching test class inside of the current directory.  The  `-i flag` will create the project inside the current directory, while the `--features file-watch` enables the continuous refresh capabilities  
 
 demo using the continuous
-file-watch for automatic updates when running locally.  _See [File Watch and Server Restart](https://docs.micronaut.io/latest/guide/index.html#types) section of the
+file-watch for automatic updates when running locally.  See [File Watch and Server Restart](https://docs.micronaut.io/latest/guide/index.html#types) section of the
 main getting started guide or [17.5.1 Automatic Restart](https://docs.micronaut.io/latest/guide/index.html#reloading) for more in depth details about the continuous file watch._
 
 The
